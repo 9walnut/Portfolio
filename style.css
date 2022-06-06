@@ -29,3 +29,32 @@
 *{
     box-sizing: border-box;
 }
+/* Typography */
+
+h1{
+    font-style: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0;
+}
+
+h2{
+    font-style: var(--font-regular);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin : 8px 0;
+}
+
+h3{
+    font-style: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color:var(--color-black);
+    margin: 8px 0;
+}
+
+p{
+    font-style: var(--font-regular);
+    font-weight: var(--weight--regular);
+    color: var(--color-black);
+    margin: 40px 0;
+}
