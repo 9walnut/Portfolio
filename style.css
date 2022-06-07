@@ -61,21 +61,21 @@ button{
 /* Typography */
 
 h1{
-    font-style: var(--font-large);
+    font-size: var(--font-large);
     font-weight: var(--weight-bold);
     color: var(--color-black);
     margin: 16px 0;
 }
 
 h2{
-    font-style: var(--font-regular);
+    font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     color: var(--color-black);
     margin : 8px 0;
 }
 
 h3{
-    font-style: var(--font-regular);
+    font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color:var(--color-black);
     margin: 8px 0;
@@ -419,4 +419,31 @@ p{
 
 .testimonial_speech-bubble a{
     color: var(--color-pink);
+}
+
+/* Contact */
+/* class와 충돌? */
+#contact{
+    background: url('image/home-background.png') center/cover no-repeat;
+}
+
+
+.contact_links i, .contact_title, .contact_email, .contact_rights{
+    color: var(--color-white);
+}
+
+.contact_title{
+    margin: 32px 0;
+}
+
+
+.contact_links{
+    font-size: var(--font-large);
+    margin : 24px 0;
+    transition: var(--animation-duration) ease-in;
+}
+
+.contact_links i:hover{
+    transform: scale(1.1);
+    color:green;
 }
