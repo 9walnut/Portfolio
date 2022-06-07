@@ -212,6 +212,7 @@ p{
 .job_logo{
     width: 100px;
     height: 100px;
+    border-radius: 50%;
 }
 .job_name
 .job_period{
@@ -375,4 +376,47 @@ p{
     width: 25px;
     height: 2px;
     background-color: var(--color-dark-white);
+}
+
+/* Testimonial */
+#testimonials{
+    background-color: var(--color-light-white);
+}
+
+.testimonials{
+    margin : 40px;
+}
+
+.testimonial{
+    display: flex;
+    margin: 32px;
+}
+
+.Testimonial_avatar{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+/* 좌우 마진 넣기 */
+.Testimonial_avatar:nth-child(odd){
+    margin-right: 40px;
+}
+
+.Testimonial_avatar:nth-child(even){
+    margin-left: 40px;
+}
+
+
+.testimonial_speech-bubble{
+    padding : 10px;
+    background-color: var(--color-white);
+    border-radius: var(--size-border-radius);
+}
+
+.testimonial_speech-bubble p{
+    color: var(--color-light-gray);
+}
+
+.testimonial_speech-bubble a{
+    color: var(--color-pink);
 }
