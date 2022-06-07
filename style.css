@@ -116,11 +116,20 @@ p{
 }
 
 .navbar_menu_item.active {
-    border: 3px solid white;
+    border: 1px solid green;
 }
 
 .navbar_menu_item:hover{
     background-color :rgb(120, 146, 120);
+}
+
+.navbar_toggle-button{
+    position: absolute;
+    top : 24px;
+    right: 32px;
+    font-size: 24px;
+    color: green;
+    display: none;
 }
 
 /* Home */
@@ -446,4 +455,21 @@ p{
 .contact_links i:hover{
     transform: scale(1.1);
     color:green;
+}
+
+@media screen and (max-width:768px){
+    .navbar_toggle-button{
+        display:block;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu{
+        flex-direction: column;
+        text-align: center;
+        width:100%;
+        display: none;
+    }
 }
