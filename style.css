@@ -355,6 +355,10 @@ p{
     background-color: rgb(69, 110, 69);
 }
 
+.project.invisible{
+    display : none;
+}
+
 .project_image{
     max-width: 100%;
     max-height: 100%;
