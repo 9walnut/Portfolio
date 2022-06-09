@@ -19,8 +19,14 @@
     if(link == null){ 
         return ;
     }
-
+    navbarMenu.classList.revemo('open');
     scrollIntoView(link);
+});
+
+// Navbar toggel button for small screeen
+const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
+navbarToggleBtn.addEventListener('click', () =>{
+navbarMenu.classList.toggle('open');
 });
 
 
