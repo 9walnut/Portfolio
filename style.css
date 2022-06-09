@@ -501,6 +501,7 @@ p{
     .navbar_toggle-button{
         display:block;
     }
+
     #navbar{
         flex-direction: column;
         align-items: flex-start;
@@ -518,7 +519,8 @@ p{
     }
 
     .navbar_menu.open{
-        display: block;
+        display:block;
+        position: absolute;
     }
 
     .about_majors{

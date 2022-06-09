@@ -19,14 +19,14 @@
     if(link == null){ 
         return ;
     }
-    navbarMenu.classList.revemo('open');
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
 });
 
 // Navbar toggel button for small screeen
-const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
-navbarToggleBtn.addEventListener('click', () =>{
-navbarMenu.classList.toggle('open');
+    const navbarToggleBtn = document.querySelector('.navbar_toggle-button');
+    navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
 });
 
 
@@ -70,11 +70,9 @@ navbarMenu.classList.toggle('open');
 
         // Remove selection from the previous item
         const active = document.querySelector('.category_btn.selected')
-        active.classList.remove('selected');
-        const target = 
-        e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-        e.target.classList.add('selected');
-
+        if(active != null) {
+            active.classList.remove('selected');
+        } e.target.classList.add('selected');
 
         projectContainer.classList.add('anim-out');
         setTimeout(() => {
