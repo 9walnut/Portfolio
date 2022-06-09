@@ -96,7 +96,7 @@ p{
     justify-content: space-between;
     background-color: transparent;
     align-items: center;
-    color :darkolivegreen;
+    color :var(--color-white);
     padding : 16px;
     transition: all var(--animation-duration) ease-in-out;
     z-index: 1;
@@ -112,7 +112,7 @@ p{
 }
 
 .navbar_logo{
-    color: darkolivegreen;
+    color: var(--color-white);
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
 }
@@ -121,15 +121,13 @@ p{
     padding : 8px 12px;
     margin : 0 4px;
     cursor:pointer;
+    border: 1px solid transparent;
     border-radius: var(--size-border-radius);
 }
 
-.navbar_menu_item.active {
-    border: 1px solid green;
-}
-
 .navbar_menu_item:hover{
-    background-color :rgb(120, 146, 120);
+    border-color: var(--color-white);
+    background-color: mediumaquamarine;
 }
 
 .navbar_toggle-button{
@@ -311,13 +309,13 @@ p{
     padding : 16px;
 }
 
-.category_btn.active,
+.category_btn.selected,
 .category_btn:hover{
     background-color: rgb(175, 199, 175);
     color: var(--color-white);
 }
 
-.category_btn.active .category_count,
+.category_btn.selected .category_count,
 .category_btn:hover .category_count{
     opacity: 1;
     top: 0;
@@ -335,13 +333,20 @@ p{
     top : -20px;
     left: 4px;
     opacity: 0;
-    transition: var(--animation-duration);
+    transition: all var(--animation-duration) ease-in;
 }
 
 .work_projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity: 1;
+    transition: all var(--animation-duration) ease-out;
+}
+
+.work_projects.anim-out{
+    opacity: 0;
+    transform: scale(0.96) translateY(40px);
 }
 
 .project{
