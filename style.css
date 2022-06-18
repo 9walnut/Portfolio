@@ -125,6 +125,9 @@ p{
     border-radius: var(--size-border-radius);
 }
 
+.navbar_menu_item.active{
+    border: 1px solid var(--color-white);
+}
 .navbar_menu_item:hover{
     border-color: var(--color-white);
     background-color: mediumaquamarine;
