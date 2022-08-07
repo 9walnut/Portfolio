@@ -196,9 +196,9 @@ p{
 }
 
 .major_icon{
-    size : 170px;
-    height: 170px;
-    line-height: 170px;
+    size : 150px;
+    height: 150px;
+    line-height: 150px;
     font-size: 50px;
     color : var(--color-blue);
     margin: auto;
@@ -221,6 +221,8 @@ p{
 
 .major_description{
     font-size: var(--font-small);
+    margin: 8px 0px;
+
 }
 
 .job{
