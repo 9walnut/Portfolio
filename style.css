@@ -190,7 +190,7 @@ p{
 }
 /* About */
 .about_majors{
-    display : inline-flex;
+    display :inline-table;
     justify-content: space-between;
     margin: 80px 0;
 }
