@@ -91,6 +91,7 @@ p{
 /* Navbar */
 #navbar {
     position: fixed;
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -103,7 +104,7 @@ p{
 }
 
 #navbar.navbar-dark{
-    background-color: rgb(15, 58, 15);
+    background-color: #c7e5c8;
     padding: 8px;
 }
 
@@ -181,20 +182,20 @@ p{
     background: url('image/another-background.png') center/cover no-repeat;
     padding : 50px;
     text-align: center;
-    margin : auto;
+    margin : 0px;
 }
 
 .section_container{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin:auto;
 }
 /* About */
 .about_majors{
-    display :inline-table;
-    justify-content: space-between;
+    display :inline-block;
+    justify-content :space-between;
     margin: 80px 0;
 }
-
+ 
 .major_icon{
     size : 150px;
     height: 150px;
@@ -211,18 +212,18 @@ p{
     transition: all var(--animation-duration) ease;
 }
 .major_icon:hover i{
-    color: var(--color-pink);
+    color: yellow;
     transform: rotate(-30deg) scale(1.1);
 }
 .major_title
 .major_description{
     color: var(--color-dark-grey);
+    margin: 10px;
 }
 
 .major_description{
     font-size: var(--font-small);
     margin: 8px 0px;
-
 }
 
 .job{
