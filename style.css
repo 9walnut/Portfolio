@@ -180,7 +180,7 @@ p{
 /* Section Common */
 .section{
     background: url('image/another-background.png') center/cover no-repeat;
-    padding : 50px;
+    padding : 30px;
     text-align: center;
     margin : 0px;
 }
@@ -191,19 +191,23 @@ p{
 }
 /* About */
 .about_majors{
-    display : flex;
+    display : inline-block;
     justify-content : space-between;
     margin: 80px 0;
 }
  
+
+.major{
+    margin : 0 42px;
+}
 .major_icon{
     size : 150px;
     height: 100px;
     line-height: 150px;
     font-size: 50px;
-    color : var(--color-black);
+    color : #1a4d2e;
     margin: auto;
-    margin-bottom:16px;
+    /* margin-bottom: 16px; */
 }
 
 .major_icon i{
@@ -263,11 +267,11 @@ p{
 }
 
 .skillset_title{
-    color: var(--color-white);
+    color: black;
 }
 .skillset_left{
     flex-basis: 60%;
-    background-color: var(--color-dark-grey);
+    background-color: #91c788;
     padding: 20px 40px;  
 }
 .skill{
@@ -286,16 +290,16 @@ p{
 
 .skill_value{
     height:3px;
-    background-color: var(--color-orange);
+    background-color: #fbdf07;
 }
 
 .skillset_right{
     flex-basis: 40%;
-    background-color: gray; 
+    background-color: #ddffbc; 
 }
 
 .tools{
-    background-color: var(--color-light-gray);
+    background-color: #ddffbc;
 }
 
 .tools
@@ -470,6 +474,9 @@ p{
     margin: 32px 0;
 }
 
+.contact_icon{
+    display: flexbox;
+}
 
 .contact_links{
     font-size: var(--font-large);
