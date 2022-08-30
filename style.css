@@ -196,7 +196,7 @@ p {
 }
 
 .major {
-  margin: 0 80px;
+  margin: 0 10px;
 }
 .major_icon {
   size: 80px;
@@ -493,7 +493,7 @@ p {
   height: 70px;
   font-size: 50px;
   color: var(--color-white);
-  background-color: lightgreen;
+  background-color: #c7e5c8;
   border-radius: 50%;
   opacity: 0;
   transition: all 300ms ease-in;
@@ -541,6 +541,7 @@ p {
   .navbar_menu.open {
     display: block;
     position: absolute;
+    background-color: #a9d4a9;
   }
 
   .section {
