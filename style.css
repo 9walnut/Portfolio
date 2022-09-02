@@ -148,6 +148,7 @@ p {
   padding: 40px;
   padding-top: 100px;
   text-align: center;
+  flex-direction: column;
 }
 
 .home_container {
