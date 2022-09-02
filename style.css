@@ -43,7 +43,7 @@ body {
 
 a {
   text-decoration: none;
-  color: darkolivegreen;
+  color: #bdbdbd;
 }
 
 ul {
@@ -94,16 +94,16 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: #1976d2;
   align-items: center;
-  color: var(--color-white);
+  color: white;
   padding: 8px;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
 }
 
 #navbar.navbar-dark {
-  background-color: #c7e5c8;
+  background-color: #1976d2;
   padding: 8px;
 }
 
@@ -130,7 +130,7 @@ p {
 }
 .navbar_menu_item:hover {
   border-color: var(--color-white);
-  background-color: mediumaquamarine;
+  background-color: rgb(226, 227, 208);
 }
 
 .navbar_toggle-button {
@@ -138,47 +138,77 @@ p {
   top: 24px;
   right: 32px;
   font-size: 24px;
-  color: green;
+  color: white;
   display: none;
 }
 
 /* Home */
 #Home {
-  background: url("image/home-background.png") center/cover no-repeat;
+  background: white center/cover no-repeat;
   padding: 40px;
   padding-top: 100px;
   text-align: center;
+}
+
+.home_container {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.home_coontainer_left {
+  flex-basis: 60%;
+  margin: 10px;
+}
+
+.home_container_right {
+  width: 450px;
+  height: 450px;
+  font: black;
+  flex-basis: 40%;
+  margin: 10px 10px 10px 60px;
 }
 
 .home_avatar {
   width: 250px;
   height: 250px;
   border-radius: 70%;
-  border: 2px solid var(--color-light-white);
+  border: 2px solid black;
 }
 
 .home_title,
 .home_description {
-  color: var(--color-white);
+  color: black;
 }
 
 .home_contact {
-  color: var(--color-white);
+  color: black;
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24;
   padding: 8px 12px;
-  border: 2px solid var(--color-white);
+  border: 2px solid black;
   border-radius: var(--size-border-radius);
 }
 
 .home_contact:hover {
-  background-color: cornflowerblue;
+  background-color: rgb(157, 180, 224);
+}
+
+.notion_emoji_css {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.notion_emoji_img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 
 /* Section Common */
 .section {
-  background: url("image/another-background.png") center/cover no-repeat;
+  background: whitesmoke center/cover no-repeat;
   padding: 30px;
   text-align: center;
   margin: 0px;
@@ -188,22 +218,26 @@ p {
   /* max-width: 1200px; */
   margin: auto;
 }
-/* About */
-.about_majors {
-  display: inline-block;
-  justify-content: space-between;
-  margin: 10px 0;
+
+/* 여기에다가 이미지 넣을건데 자꾸 이미지가 깨지네 ㅠㅠ */
+/* .section_headline {
+  display: flex;
+} */
+
+.notion_emoji_container {
+  margin: 0 10px;
 }
 
-.major {
-  margin: 0 10px;
+.major_icon_container {
+  display: flex;
+  justify-content: center;
 }
 .major_icon {
   size: 80px;
   height: 80px;
   line-height: 100px;
   font-size: 50px;
-  color: #1a4d2e;
+  color: black;
   margin: 10px;
   /* margin-bottom: 16px; */
 }
@@ -218,6 +252,8 @@ p {
 }
 
 .major_description {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: var(--font-small);
   margin: 8px 0px;
 }
@@ -251,23 +287,24 @@ p {
 
 /* Skills */
 #skills {
-  background: url("image/home-background.png") center/cover no-repeat;
-  background-color: var(--color-yellow);
+  background: center/cover no-repeat;
+  background-color: whitesmoke;
 }
 
 .skillset {
   display: flex;
-  background-color: var(--color-light-gray);
+  /* background-color: var(--color-light-gray); */
   color: light var(--color-light-white);
   margin: 20px 0;
 }
 
 .skillset_title {
   color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .skillset_left {
   flex-basis: 60%;
-  background-color: #91c788;
+  /* background-color: #2196f3; */
   padding: 20px 40px;
 }
 .skill {
@@ -280,22 +317,18 @@ p {
 
 .skill_bar {
   width: 100%;
-  height: 3px;
+  height: 5px;
   background-color: gray;
 }
 
 .skill_value {
-  height: 3px;
-  background-color: #fbdf07;
+  height: 5px;
+  background-color: #81d4fa;
 }
 
 .skillset_right {
   flex-basis: 40%;
-  background-color: #ddffbc;
-}
-
-.tools {
-  background-color: #ddffbc;
+  /* background-color: #6ec5ff; */
 }
 
 .tools .etc {
@@ -307,7 +340,7 @@ p {
   margin: 0px;
 }
 .category_btn {
-  border: 1px solid darkgreen;
+  border: 1px solid #1976d2;
   border-radius: 4px;
   font-size: var(--font-regular);
   padding: 8px 4px;
@@ -316,8 +349,8 @@ p {
 
 .category_btn.selected,
 .category_btn:hover {
-  background-color: rgb(175, 199, 175);
-  color: var(--color-white);
+  background-color: white;
+  color: var(--color-black);
 }
 
 .category_btn.selected .category_count,
@@ -327,7 +360,7 @@ p {
 }
 
 .category_count {
-  background-color: yellowgreen;
+  background-color: rgb(93, 128, 216);
   border-radius: 30%;
   color: var(--color-white);
   width: 24px;
@@ -354,6 +387,10 @@ p {
   transform: scale(0.96) translateY(40px);
 }
 
+.work_categories {
+  margin: 5px;
+}
+
 .project {
   position: relative;
   display: flex;
@@ -362,7 +399,8 @@ p {
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: rgb(69, 110, 69);
+  background-color: #1976d2;
+  border-radius: 10px;
 }
 
 .project.invisible {
@@ -382,6 +420,7 @@ p {
   justify-content: center;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   top: 0;
   left: 0;
   opacity: 0;
@@ -455,7 +494,7 @@ p {
 /* Contact */
 /* class와 충돌? */
 #contact {
-  background: url("image/home-background.png") center/cover no-repeat;
+  background: #1976d2 center/cover no-repeat;
 }
 
 .contact_links i,
@@ -525,7 +564,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: #c7e5c8;
+    background-color: 1976d2;
   }
 
   #navbar.navbar-dark {
@@ -542,6 +581,10 @@ p {
     display: block;
     position: absolute;
     background-color: #a9d4a9;
+  }
+
+  .home_container {
+    flex-direction: column;
   }
 
   .section {

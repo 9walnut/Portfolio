@@ -127,14 +127,7 @@ workBtnContainer.addEventListener("click", (e) => {
 // 2. IntersectionObserver를 이용해서 섹션 관찰
 // 3. 보여지는 섹션에 해당되는 메뉴 아이템을 활성화시킨다
 
-const sectionIds = [
-  "#Home",
-  "#about",
-  "#skills",
-  "#work",
-  "#testimonials",
-  "#contact",
-];
+const sectionIds = ["#Home", "#skills", "#work", "#testimonials", "#contact"];
 const sections = sectionIds.map((id) => document.querySelector(id));
 const navItems = sectionIds.map((id) =>
   document.querySelector(`[data-link="${id}"]`)

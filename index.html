@@ -24,12 +24,12 @@
     <nav id="navbar">
       <div class="navbar_logo">
         <img src="image/favicon.png" alt="로고" />
-        <a href="#">9walnut</a>
+        <a href="#" style="color:white">9walnut</a>
       </div>
       <div>
         <ul class="navbar_menu">
           <li class="navbar_menu_item active" data-link="#Home">Home</li>
-          <li class="navbar_menu_item" data-link="#about">About</li>
+          <!-- <li class="navbar_menu_item" data-link="#about">About</li> -->
           <li class="navbar_menu_item" data-link="#skills">Skills</li>
           <li class="navbar_menu_item" data-link="#work">My work</li>
           <li class="navbar_menu_item" data-link="#testimonials">
@@ -48,95 +48,65 @@
     <!-- Home -->
     <section id="Home">
       <div class="home_container">
-        <img
-          src="image/profile.jpg"
-          alt="9walnut's profile photo"
-          class="home_avatar"
-        />
-        <h1 class="home_title">
-          Hello <br />
-          I'm GuHo Kwon.
-        </h1>
-        <h2 class="home_description">Junior Front-End Developer</h2>
-        <button class="home_contact" data-link="#home_contact">
-          Contact Me
-        </button>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section section_container">
-      <h1>About me</h1>
-      <div class="about_majors">
-        <div class="major">
-          <div class="major_icon">
-            <i class="fa-solid fa-user"></i>
-          </div>
-          <h2 class="major_title">이름</h2>
-          <div class="major_description">권구호</div>
+        <div class="home_container_left">
+          <img
+            src="image/profile.jpg"
+            alt="9walnut's profile photo"
+            class="home_avatar"
+          />
+          <h1 class="home_title">
+            Hello <br />
+            I'm GuHo Kwon.
+          </h1>
+          <h2 class="home_description">Junior Front-End Developer</h2>
+          <button class="home_contact" data-link="#home_contact">
+            Contact Me
+          </button>
         </div>
-        <div class="major">
-          <div class="major_icon">
-            <i class="fa-solid fa-map"></i>
-          </div>
-          <h2 class="major_title">주소지</h2>
-          <div class="major_description">서울특별시 관악구</div>
-        </div>
-        <div class="major">
-          <div class="major_icon">
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <h2 class="major_title">이메일</h2>
-          <div class="major_description">kguho9202@gmail.com</div>
-        </div>
-      </div>
-      <div class="about_majors">
-        <div class="major">
-          <div class="major_icon">
-            <i class="fa-solid fa-calendar-days"></i>
-          </div>
-          <h2 class="major_title">생년월일</h2>
-          <div class="major_description">1992.02.04</div>
-        </div>
-        <div class="major">
-          <div class="major_icon">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <h2 class="major_title">연락처</h2>
-          <div class="major_description">010-6321-9202</div>
-        </div>
-        <div class="major">
-          <div class="major_icon">
-            <i class="fa-brands fa-github"></i>
-          </div>
-          <h2 class="major_title">Github</h2>
-          <div class="major_description">github.com/9walnut</div>
-        </div>
-      </div>
-
-      <!-- <div class="about_jobs">
-                <div class="job">
-                    <img src="image/jobs/captain.jpg" alt="장교" class="job_logo">
-                    <div class="job_discription">
-                        <p class="job_name">대한민국 육군 대위</p>
-                        <p class="job_period">'14. 03. 01 ~ '22. 11. 30</p>
-                    </div>
+        <!-- Hom Right -->
+      <div class="home_container_right">
+        <div class="notion_emoji_container">
+            <div class="notion_column_block">
+              <div class="notion_text_block">
+                <div class="notion_emoji_css" style ="display:flex">
+                  <img class = "notion_emoji_img" src="/image/emoji/mail.jpg">
+                  <a><span>kguho9202@gmail.com</span></a>
                 </div>
-            </div> -->
+              </div>
+            </div>
+            <div class="notion_column_block">
+              <div class="notion_text_block">
+                <div class="notion_emoji_css "style ="display:flex">
+                  <img class = "notion_emoji_img" src="/image/emoji/github.gif">
+                  <a href="https://github.com/9walnut/" target="_blank"><span>Github</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="notion_column_block">
+              <div class="notion_text_block">
+                <div class="notion_emoji_css" style ="display:flex">
+                  <img class = "notion_emoji_img" src="/image/emoji/resume.gif">
+                  <a href="kguho9202@gmail.com" target="_blank"><span>Resume</span></a>
+                </div>
+              </div>
+            </div>
+        </div>
+       </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="section">
       <div class="section_container">
-        <h1>Skills</h1>
+        <h1 class="section_headline" ><img src="/image/emoji/skills.gif" style="width:1em;height:1em;line-height:1em;vertical-align:-0.1em;margin:0">Skills</h1>
         <h2>Skills & Attributes</h2>
         <p></p>
         <div class="skillset">
           <div class="skillset_left">
             <h3 class="skillset_title">Skills</h3>
             <div class="skill">
-              <div class="skill_description">
-                <span>HTML</span>
+              <div class="skill_description" style="display:flex;">
+                <a><img src="/image/language/html5.svg" style="width:1.5em;height:1.5em"></a>
                 <span id="counter1">100</span>
               </div>
               <div class="skill_bar">
@@ -145,7 +115,7 @@
             </div>
             <div class="skill">
               <div class="skill_description">
-                <span>CSS</span>
+                <a><img src="/image/language/css3.svg" style="width:1.5em;height:1.5em"></a>
                 <span id="counter2">70</span>
               </div>
               <div class="skill_bar">
@@ -154,7 +124,7 @@
             </div>
             <div class="skill">
               <div class="skill_description">
-                <span>JS</span>
+                <a><img src="/image/language/javascript.svg" style="width:1.5em;height:1.5em"></a>
                 <span id="counter3">70</span>
               </div>
               <div class="skill_bar">
@@ -170,11 +140,12 @@
               </ul>
             </div>
             <div class="etc">
-              <h3 class="skillset_title">Etc</h3>
+              <h3 class="skillset_title">FrameWork / Library</h3>
               <ul class="etc_list">
-                <li><span>Git / Github</span></li>
-                <li><span>Visual Studio</span></li>
-                <li><span>Slack / Notion</span></li>
+                <li><a><img src="/image/language/react.svg" style="width:1em;height:1em"></a>
+                  <span>React</span></li>
+                <li><span>-</span></li>
+                <li><span>-</span></li>
               </ul>
             </div>
           </div>
@@ -315,23 +286,14 @@
               srcset=""
             />
             <div class="testimonial_speech-bubble">
-              <p>
-                산책을 잘시켜주는 훌륭한 형입니다. 절대 산책을 게을리하지 않고
-                집에 오게되면 가장 먼저 저를 기쁘게 해줍니다. 가끔 저를 귀찮게
-                하지만 츤데레 같은 성격을 가지고 있어 잘 챙겨줍니다
-              </p>
+              <p>이거</p>
               <p class="name"><a href="">Hodu</a> / Woori Zip</p>
             </div>
           </div>
           <div class="testimonial">
             <div class="testimonial_speech-bubble">
-              <p>
-                많은 중대장들이 크게 실망을 하는 경우가 많습니다. 하지만 권구호
-                대위를 지금까지 지켜봐온 바로는 쉽게 실망하지 않는 다는 장점이
-                있습니다. 책임감을 가지고 일을 마무리려는 모습이 굉장히
-                인상적이고 진취적인 생각을 통해 새로운 일을 하는 모습은 인상
-                깊습니다.
-              </p>
+              <p>넣는게 맞을까? ㅋㅋ</p>
+
               <p class="name"><a href="">Ikjoo</a> / 마크비전</p>
             </div>
             <img
