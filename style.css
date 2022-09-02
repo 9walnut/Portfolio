@@ -166,7 +166,7 @@ p {
   height: 450px;
   font: black;
   flex-basis: 40%;
-  margin: 10px 10px 10px 60px;
+  margin: 10px 10px 10px 10px;
 }
 
 .home_avatar {
@@ -588,6 +588,10 @@ p {
 
   .home_container {
     flex-direction: column;
+  }
+
+  .home_container_right {
+    width: auto;
   }
 
   .section {
