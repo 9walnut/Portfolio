@@ -148,7 +148,6 @@ p {
   padding: 40px;
   padding-top: 100px;
   text-align: center;
-  flex-direction: column;
 }
 
 .home_container {
@@ -527,7 +526,7 @@ p {
 /* Scroll */
 .arrow-up {
   position: fixed;
-  bottom: 50px;
+  bottom: 50x;
   right: 50px;
   width: 70px;
   height: 70px;
@@ -644,5 +643,10 @@ p {
     line-height: 50px;
     right: 16px;
     bottom: 16px;
+  }
+
+  .arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
