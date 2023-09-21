@@ -294,7 +294,7 @@ p {
 }
 
 .skillset {
-  display: flex;
+  /* display: flex; */
   /* background-color: var(--color-light-gray); */
   color: light var(--color-light-white);
   margin: 20px 0;
@@ -306,7 +306,10 @@ p {
 }
 .skillset_left {
   flex-basis: 60%;
+  display: flex;
   /* background-color: #2196f3; */
+  flex-direction: row;
+  justify-content: space-around;
   padding: 20px 40px;
 }
 .skill {
@@ -314,6 +317,7 @@ p {
 }
 .skill_description {
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-between;
 }
 
